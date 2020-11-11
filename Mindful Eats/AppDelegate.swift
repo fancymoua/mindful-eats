@@ -1,9 +1,4 @@
-//
-//  AppDelegate.swift
-//  Mindful Eats
-//
-//  Created by Fancy on 11/10/20.
-//
+
 
 import UIKit
 
@@ -13,7 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .gray
+        
         return true
     }
 

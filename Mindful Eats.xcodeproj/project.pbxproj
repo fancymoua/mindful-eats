@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B11CF42A255B454900C7325B /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF429255B454900C7325B /* CheckIn.swift */; };
+		B11CF433255B47D200C7325B /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF432255B47D200C7325B /* Emotion.swift */; };
+		B11CF438255C468D00C7325B /* CheckInsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF437255C468D00C7325B /* CheckInsTableVC.swift */; };
+		B11CF43D255C502500C7325B /* CheckInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF43C255C502500C7325B /* CheckInCell.swift */; };
 		B16AB09E255B3EBA0021BC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB09D255B3EBA0021BC67 /* AppDelegate.swift */; };
 		B16AB0A0255B3EBA0021BC67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB09F255B3EBA0021BC67 /* SceneDelegate.swift */; };
-		B16AB0A2255B3EBA0021BC67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0A1255B3EBA0021BC67 /* ViewController.swift */; };
+		B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0A1255B3EBA0021BC67 /* HomeVC.swift */; };
 		B16AB0A5255B3EBA0021BC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16AB0A3255B3EBA0021BC67 /* Main.storyboard */; };
 		B16AB0A7255B3EBE0021BC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B16AB0A6255B3EBE0021BC67 /* Assets.xcassets */; };
 		B16AB0AA255B3EBE0021BC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16AB0A8255B3EBE0021BC67 /* LaunchScreen.storyboard */; };
@@ -35,10 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B11CF429255B454900C7325B /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		B11CF432255B47D200C7325B /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		B11CF437255C468D00C7325B /* CheckInsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInsTableVC.swift; sourceTree = "<group>"; };
+		B11CF43C255C502500C7325B /* CheckInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCell.swift; sourceTree = "<group>"; };
 		B16AB09A255B3EBA0021BC67 /* Mindful Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindful Eats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AB09D255B3EBA0021BC67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16AB09F255B3EBA0021BC67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B16AB0A1255B3EBA0021BC67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B16AB0A1255B3EBA0021BC67 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B16AB0A4255B3EBA0021BC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B16AB0A6255B3EBE0021BC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B16AB0A9255B3EBE0021BC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11CF421255B452700C7325B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B16AB0A1255B3EBA0021BC67 /* HomeVC.swift */,
+				B11CF437255C468D00C7325B /* CheckInsTableVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B11CF428255B453900C7325B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B16AB0A3255B3EBA0021BC67 /* Main.storyboard */,
+				B11CF43C255C502500C7325B /* CheckInCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B11CF42E255B455300C7325B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B11CF429255B454900C7325B /* CheckIn.swift */,
+				B11CF432255B47D200C7325B /* Emotion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B16AB091255B3EBA0021BC67 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +136,9 @@
 			children = (
 				B16AB09D255B3EBA0021BC67 /* AppDelegate.swift */,
 				B16AB09F255B3EBA0021BC67 /* SceneDelegate.swift */,
-				B16AB0A1255B3EBA0021BC67 /* ViewController.swift */,
-				B16AB0A3255B3EBA0021BC67 /* Main.storyboard */,
+				B11CF42E255B455300C7325B /* Model */,
+				B11CF428255B453900C7325B /* View */,
+				B11CF421255B452700C7325B /* Controller */,
 				B16AB0A6255B3EBE0021BC67 /* Assets.xcassets */,
 				B16AB0A8255B3EBE0021BC67 /* LaunchScreen.storyboard */,
 				B16AB0AB255B3EBE0021BC67 /* Info.plist */,
@@ -258,7 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16AB0A2255B3EBA0021BC67 /* ViewController.swift in Sources */,
+				B11CF433255B47D200C7325B /* Emotion.swift in Sources */,
+				B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */,
+				B11CF43D255C502500C7325B /* CheckInCell.swift in Sources */,
+				B11CF42A255B454900C7325B /* CheckIn.swift in Sources */,
+				B11CF438255C468D00C7325B /* CheckInsTableVC.swift in Sources */,
 				B16AB09E255B3EBA0021BC67 /* AppDelegate.swift in Sources */,
 				B16AB0A0255B3EBA0021BC67 /* SceneDelegate.swift in Sources */,
 			);
