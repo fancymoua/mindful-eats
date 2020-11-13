@@ -3,14 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B11CF42A255B454900C7325B /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF429255B454900C7325B /* CheckIn.swift */; };
+		88E40D41D81FE8CE7385DEFC /* Pods_Mindful_Eats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A97550F32389B2B6C5D62D7 /* Pods_Mindful_Eats.framework */; };
 		B11CF433255B47D200C7325B /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF432255B47D200C7325B /* Emotion.swift */; };
 		B11CF438255C468D00C7325B /* CheckInsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF437255C468D00C7325B /* CheckInsTableVC.swift */; };
 		B11CF43D255C502500C7325B /* CheckInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF43C255C502500C7325B /* CheckInCell.swift */; };
+		B11CF445255C605F00C7325B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF444255C605F00C7325B /* ProfileVC.swift */; };
+		B11CF453255C738400C7325B /* MindfulEats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B11CF451255C738400C7325B /* MindfulEats.xcdatamodeld */; };
+		B11CF458255C88ED00C7325B /* AddFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF457255C88ED00C7325B /* AddFoodVC.swift */; };
+		B11CF463255C8DFA00C7325B /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF462255C8DFA00C7325B /* FoodItemCell.swift */; };
+		B11CF47C255CBC4A00C7325B /* CheckInDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CF47B255CBC4900C7325B /* CheckInDetailVC.swift */; };
+		B134055F255DF0FD0022185F /* EmotionsSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134055E255DF0FD0022185F /* EmotionsSelectionVC.swift */; };
+		B1654091255F2DAD0000B4A6 /* PeoplePlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1654090255F2DAD0000B4A6 /* PeoplePlaceVC.swift */; };
 		B16AB09E255B3EBA0021BC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB09D255B3EBA0021BC67 /* AppDelegate.swift */; };
 		B16AB0A0255B3EBA0021BC67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB09F255B3EBA0021BC67 /* SceneDelegate.swift */; };
 		B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0A1255B3EBA0021BC67 /* HomeVC.swift */; };
@@ -19,6 +26,8 @@
 		B16AB0AA255B3EBE0021BC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16AB0A8255B3EBE0021BC67 /* LaunchScreen.storyboard */; };
 		B16AB0B5255B3EBF0021BC67 /* Mindful_EatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0B4255B3EBF0021BC67 /* Mindful_EatsTests.swift */; };
 		B16AB0C0255B3EBF0021BC67 /* Mindful_EatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */; };
+		D79E3F5D393D9F40D90B55F7 /* Pods_Mindful_EatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */; };
+		FD68CBE7BB5B5ECF0AB6CA98 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B11CF429255B454900C7325B /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		11416AE6CE7E1C865FC5A048 /* Pods-Mindful Eats-Mindful EatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats-Mindful EatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Mindful Eats-Mindful EatsUITests/Pods-Mindful Eats-Mindful EatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17E39D1118EA5EB747C6E78A /* Pods-Mindful EatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful EatsTests.debug.xcconfig"; path = "Target Support Files/Pods-Mindful EatsTests/Pods-Mindful EatsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63CEDF527BA7269083B91127 /* Pods-Mindful EatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful EatsTests.release.xcconfig"; path = "Target Support Files/Pods-Mindful EatsTests/Pods-Mindful EatsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CDF86A2692BAC4C650D21CD /* Pods-Mindful Eats-Mindful EatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats-Mindful EatsUITests.release.xcconfig"; path = "Target Support Files/Pods-Mindful Eats-Mindful EatsUITests/Pods-Mindful Eats-Mindful EatsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A97550F32389B2B6C5D62D7 /* Pods_Mindful_Eats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_Eats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11CF432255B47D200C7325B /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		B11CF437255C468D00C7325B /* CheckInsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInsTableVC.swift; sourceTree = "<group>"; };
 		B11CF43C255C502500C7325B /* CheckInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCell.swift; sourceTree = "<group>"; };
+		B11CF444255C605F00C7325B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		B11CF452255C738400C7325B /* MindfulEats.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MindfulEats.xcdatamodel; sourceTree = "<group>"; };
+		B11CF457255C88ED00C7325B /* AddFoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodVC.swift; sourceTree = "<group>"; };
+		B11CF462255C8DFA00C7325B /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		B11CF47B255CBC4900C7325B /* CheckInDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInDetailVC.swift; sourceTree = "<group>"; };
+		B134055E255DF0FD0022185F /* EmotionsSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsSelectionVC.swift; sourceTree = "<group>"; };
+		B1654090255F2DAD0000B4A6 /* PeoplePlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePlaceVC.swift; sourceTree = "<group>"; };
 		B16AB09A255B3EBA0021BC67 /* Mindful Eats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindful Eats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AB09D255B3EBA0021BC67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16AB09F255B3EBA0021BC67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +77,10 @@
 		B16AB0BB255B3EBF0021BC67 /* Mindful EatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mindful EatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindful_EatsUITests.swift; sourceTree = "<group>"; };
 		B16AB0C1255B3EBF0021BC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67DF124ED092E84ABBDBE5F /* Pods-Mindful Eats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats.debug.xcconfig"; path = "Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats.debug.xcconfig"; sourceTree = "<group>"; };
+		D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_Eats_Mindful_EatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_EatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1DE14F2C3D86E4FC51F8A2 /* Pods-Mindful Eats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats.release.xcconfig"; path = "Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E40D41D81FE8CE7385DEFC /* Pods_Mindful_Eats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79E3F5D393D9F40D90B55F7 /* Pods_Mindful_EatsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,17 +104,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD68CBE7BB5B5ECF0AB6CA98 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F0075DE1B9EA83D7855BD48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A97550F32389B2B6C5D62D7 /* Pods_Mindful_Eats.framework */,
+				D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */,
+				E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9470D96A62EEE4053178C632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C67DF124ED092E84ABBDBE5F /* Pods-Mindful Eats.debug.xcconfig */,
+				FD1DE14F2C3D86E4FC51F8A2 /* Pods-Mindful Eats.release.xcconfig */,
+				11416AE6CE7E1C865FC5A048 /* Pods-Mindful Eats-Mindful EatsUITests.debug.xcconfig */,
+				7CDF86A2692BAC4C650D21CD /* Pods-Mindful Eats-Mindful EatsUITests.release.xcconfig */,
+				17E39D1118EA5EB747C6E78A /* Pods-Mindful EatsTests.debug.xcconfig */,
+				63CEDF527BA7269083B91127 /* Pods-Mindful EatsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B11CF421255B452700C7325B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				B16AB0A1255B3EBA0021BC67 /* HomeVC.swift */,
 				B11CF437255C468D00C7325B /* CheckInsTableVC.swift */,
+				B1654090255F2DAD0000B4A6 /* PeoplePlaceVC.swift */,
+				B11CF457255C88ED00C7325B /* AddFoodVC.swift */,
+				B134055E255DF0FD0022185F /* EmotionsSelectionVC.swift */,
+				B11CF47B255CBC4900C7325B /* CheckInDetailVC.swift */,
+				B11CF444255C605F00C7325B /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +153,7 @@
 			children = (
 				B16AB0A3255B3EBA0021BC67 /* Main.storyboard */,
 				B11CF43C255C502500C7325B /* CheckInCell.swift */,
+				B11CF462255C8DFA00C7325B /* FoodItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,7 +161,6 @@
 		B11CF42E255B455300C7325B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B11CF429255B454900C7325B /* CheckIn.swift */,
 				B11CF432255B47D200C7325B /* Emotion.swift */,
 			);
 			path = Model;
@@ -118,6 +173,8 @@
 				B16AB0B3255B3EBF0021BC67 /* Mindful EatsTests */,
 				B16AB0BE255B3EBF0021BC67 /* Mindful EatsUITests */,
 				B16AB09B255B3EBA0021BC67 /* Products */,
+				9470D96A62EEE4053178C632 /* Pods */,
+				3F0075DE1B9EA83D7855BD48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +199,7 @@
 				B16AB0A6255B3EBE0021BC67 /* Assets.xcassets */,
 				B16AB0A8255B3EBE0021BC67 /* LaunchScreen.storyboard */,
 				B16AB0AB255B3EBE0021BC67 /* Info.plist */,
+				B11CF451255C738400C7325B /* MindfulEats.xcdatamodeld */,
 			);
 			path = "Mindful Eats";
 			sourceTree = "<group>";
@@ -171,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16AB0C4255B3EBF0021BC67 /* Build configuration list for PBXNativeTarget "Mindful Eats" */;
 			buildPhases = (
+				7677AD37A82F2E81ADEC4C61 /* [CP] Check Pods Manifest.lock */,
 				B16AB096255B3EBA0021BC67 /* Sources */,
 				B16AB097255B3EBA0021BC67 /* Frameworks */,
 				B16AB098255B3EBA0021BC67 /* Resources */,
+				F41FB7AA5F92765186A945E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16AB0C7255B3EBF0021BC67 /* Build configuration list for PBXNativeTarget "Mindful EatsTests" */;
 			buildPhases = (
+				CD5D8FDCDEDA35AAC802FEC1 /* [CP] Check Pods Manifest.lock */,
 				B16AB0AC255B3EBF0021BC67 /* Sources */,
 				B16AB0AD255B3EBF0021BC67 /* Frameworks */,
 				B16AB0AE255B3EBF0021BC67 /* Resources */,
@@ -206,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B16AB0CA255B3EBF0021BC67 /* Build configuration list for PBXNativeTarget "Mindful EatsUITests" */;
 			buildPhases = (
+				14BA2C0C1C7AE4C970E8DF7B /* [CP] Check Pods Manifest.lock */,
 				B16AB0B7255B3EBF0021BC67 /* Sources */,
 				B16AB0B8255B3EBF0021BC67 /* Frameworks */,
 				B16AB0B9255B3EBF0021BC67 /* Resources */,
+				CBAB33E8E4D6995BDE141E9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +352,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14BA2C0C1C7AE4C970E8DF7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mindful Eats-Mindful EatsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7677AD37A82F2E81ADEC4C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mindful Eats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAB33E8E4D6995BDE141E9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats-Mindful EatsUITests/Pods-Mindful Eats-Mindful EatsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats-Mindful EatsUITests/Pods-Mindful Eats-Mindful EatsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats-Mindful EatsUITests/Pods-Mindful Eats-Mindful EatsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5D8FDCDEDA35AAC802FEC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mindful EatsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41FB7AA5F92765186A945E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B16AB096255B3EBA0021BC67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -296,10 +462,16 @@
 			files = (
 				B11CF433255B47D200C7325B /* Emotion.swift in Sources */,
 				B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */,
+				B11CF463255C8DFA00C7325B /* FoodItemCell.swift in Sources */,
+				B11CF453255C738400C7325B /* MindfulEats.xcdatamodeld in Sources */,
+				B11CF458255C88ED00C7325B /* AddFoodVC.swift in Sources */,
 				B11CF43D255C502500C7325B /* CheckInCell.swift in Sources */,
-				B11CF42A255B454900C7325B /* CheckIn.swift in Sources */,
+				B1654091255F2DAD0000B4A6 /* PeoplePlaceVC.swift in Sources */,
+				B11CF445255C605F00C7325B /* ProfileVC.swift in Sources */,
 				B11CF438255C468D00C7325B /* CheckInsTableVC.swift in Sources */,
 				B16AB09E255B3EBA0021BC67 /* AppDelegate.swift in Sources */,
+				B134055F255DF0FD0022185F /* EmotionsSelectionVC.swift in Sources */,
+				B11CF47C255CBC4A00C7325B /* CheckInDetailVC.swift in Sources */,
 				B16AB0A0255B3EBA0021BC67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +645,7 @@
 		};
 		B16AB0C5255B3EBF0021BC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67DF124ED092E84ABBDBE5F /* Pods-Mindful Eats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +665,7 @@
 		};
 		B16AB0C6255B3EBF0021BC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1DE14F2C3D86E4FC51F8A2 /* Pods-Mindful Eats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +685,7 @@
 		};
 		B16AB0C8255B3EBF0021BC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E39D1118EA5EB747C6E78A /* Pods-Mindful EatsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +708,7 @@
 		};
 		B16AB0C9255B3EBF0021BC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CEDF527BA7269083B91127 /* Pods-Mindful EatsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -555,6 +731,7 @@
 		};
 		B16AB0CB255B3EBF0021BC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11416AE6CE7E1C865FC5A048 /* Pods-Mindful Eats-Mindful EatsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,6 +752,7 @@
 		};
 		B16AB0CC255B3EBF0021BC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CDF86A2692BAC4C650D21CD /* Pods-Mindful Eats-Mindful EatsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,6 +811,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B11CF451255C738400C7325B /* MindfulEats.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B11CF452255C738400C7325B /* MindfulEats.xcdatamodel */,
+			);
+			currentVersion = B11CF452255C738400C7325B /* MindfulEats.xcdatamodel */;
+			path = MindfulEats.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B16AB092255B3EBA0021BC67 /* Project object */;
 }

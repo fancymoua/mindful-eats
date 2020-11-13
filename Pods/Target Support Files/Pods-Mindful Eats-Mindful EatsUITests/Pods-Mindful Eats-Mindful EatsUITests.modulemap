@@ -1,0 +1,6 @@
+framework module Pods_Mindful_Eats_Mindful_EatsUITests {
+  umbrella header "Pods-Mindful Eats-Mindful EatsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

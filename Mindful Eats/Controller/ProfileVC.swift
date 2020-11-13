@@ -1,34 +1,15 @@
 
-
 import UIKit
 
-class HomeVC: UIViewController {
+class ProfileVC: UIViewController {
     
     var BGImage = UIImageView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         loadBackgroundImage()
-        
-        getCoreDataDBPath()
-        
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        navigationController?.isNavigationBarHidden = true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(true)
-        navigationController?.isNavigationBarHidden = false
-    }
-
-
-}
-
-extension HomeVC {
     
     func loadBackgroundImage() {
         
@@ -45,17 +26,5 @@ extension HomeVC {
         
     }
     
-    func getCoreDataDBPath() {
-        let path = FileManager
-            .default
-            .urls(for: .applicationSupportDirectory, in: .userDomainMask)
-            .last?
-            .absoluteString
-            .replacingOccurrences(of: "file://", with: "")
-            .removingPercentEncoding
 
-        print("Core Data DB Path :: \(path ?? "Not found")")
-    }
-    
 }
-
