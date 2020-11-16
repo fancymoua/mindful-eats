@@ -34,8 +34,8 @@ class ProfileVC: UIViewController {
         textField.text = userName
         
         let confirmAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
-            print("Saved")
             UserDefaults.standard.setValue(textField.text, forKey: "User_name")
+            self.nameButton.setTitle(textField.text, for: .normal)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
