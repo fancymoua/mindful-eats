@@ -701,6 +701,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="tb8-nB-L2E"/>
+                    <connections>
+                        <outlet property="nameButton" destination="U9n-OU-tUS" id="Ndf-rW-iKP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGR-6U-apY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -2,15 +2,55 @@
 import UIKit
 
 class ProfileVC: UIViewController {
+
+    @IBOutlet weak var nameButton: CustomAnswerButton!
     
     var BGImage = UIImageView()
+    var userName = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         loadBackgroundImage()
+        
+        userName = UserDefaults.standard.string(forKey: "User_name")!
+        
+        nameButton.setTitle(userName, for: .normal)
+        
+        print("Value is \(userName)")
     }
     
+    @IBAction func nameButtonPressed(_ sender: Any) {
+        showTextField()
+    }
+    
+    func showTextField() {
+        
+        let alertController = UIAlertController(title: "Edit Name", message: "", preferredStyle: .alert)
+        
+        alertController.addTextField()
+        
+        let textField = alertController.textFields![0]
+        textField.text = userName
+        
+        let confirmAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
+            print("Saved")
+            UserDefaults.standard.setValue(textField.text, forKey: "User_name")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+
+}
+
+extension ProfileVC {
     func loadBackgroundImage() {
         
         view.addSubview(BGImage)
@@ -25,34 +65,4 @@ class ProfileVC: UIViewController {
         view.sendSubviewToBack(BGImage)
         
     }
-    
-    @IBAction func nameButtonPressed(_ sender: Any) {
-        showTextField()
-    }
-    
-    func showTextField() {
-        
-        let usersName = "Fancy"
-        
-        let alertController = UIAlertController(title: "Edit Name", message: "", preferredStyle: .alert)
-        
-        alertController.addTextField()
-        
-        let textField = alertController.textFields![0]
-        textField.text = usersName
-        
-        let confirmAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
-            print("Saved")
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
-        }
-        
-        alertController.addAction(confirmAction)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-
 }
