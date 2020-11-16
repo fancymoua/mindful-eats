@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9R-QU-j3P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kli-Yc-jX5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -611,14 +611,97 @@
                     <view key="view" contentMode="scaleToFill" id="xdl-YG-f8L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-he-T3P">
+                                <rect key="frame" x="0.0" y="214" width="414" height="599"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQF-SY-usk">
+                                        <rect key="frame" x="30" y="75" width="354" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                        <color key="textColor" red="0.028559999999999999" green="0.02751" blue="0.027490000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="w3t-UX-3XV">
+                                        <rect key="frame" x="30" y="135.5" width="354" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9n-OU-tUS" customClass="CustomAnswerButton" customModule="Mindful_Eats" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-3" minY="5" maxX="0.0" maxY="1"/>
+                                                <inset key="imageEdgeInsets" minX="-20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Fancy" image="person" catalog="system">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IF-SU-PwP" customClass="CustomAnswerButton" customModule="Mindful_Eats" customModuleProvider="target">
+                                                <rect key="frame" x="192" y="0.0" width="162" height="60"/>
+                                                <color key="backgroundColor" red="1" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="titleEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="1"/>
+                                                <inset key="imageEdgeInsets" minX="-24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="24" image="checkmark.circle" catalog="system">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fqk-8G-SSb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRE-Ls-JUH" customClass="CustomAnswerButton" customModule="Mindful_Eats" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="220.5" width="354" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Sbc-Pw-oZG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="View all Check-in's &gt;">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="w3t-UX-3XV" firstAttribute="top" secondItem="AQF-SY-usk" secondAttribute="bottom" constant="30" id="C3I-0A-ycF"/>
+                                    <constraint firstItem="QRE-Ls-JUH" firstAttribute="top" secondItem="w3t-UX-3XV" secondAttribute="bottom" constant="25" id="DmC-VT-Iae"/>
+                                    <constraint firstAttribute="trailing" secondItem="AQF-SY-usk" secondAttribute="trailing" constant="30" id="IsO-oJ-Efu"/>
+                                    <constraint firstItem="AQF-SY-usk" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="JNe-2l-Pu2"/>
+                                    <constraint firstItem="AQF-SY-usk" firstAttribute="top" secondItem="3QW-he-T3P" secondAttribute="top" constant="75" id="Xij-kq-Z7r"/>
+                                    <constraint firstItem="w3t-UX-3XV" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="bZ8-bk-1an"/>
+                                    <constraint firstItem="QRE-Ls-JUH" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="cNe-gP-JyF"/>
+                                    <constraint firstAttribute="trailing" secondItem="QRE-Ls-JUH" secondAttribute="trailing" constant="30" id="mUI-lW-y6m"/>
+                                    <constraint firstAttribute="trailing" secondItem="w3t-UX-3XV" secondAttribute="trailing" constant="30" id="xaM-yh-Nge"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-7h-57n">
+                                <rect key="frame" x="142" y="139" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7Sv-8D-hQn"/>
+                                    <constraint firstAttribute="width" constant="130" id="YAP-rQ-xzT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ePk-DI-cc3"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.792156862745098" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3QW-he-T3P" firstAttribute="top" secondItem="ePk-DI-cc3" secondAttribute="top" constant="170" id="U2a-B4-ILM"/>
+                            <constraint firstItem="hlX-7h-57n" firstAttribute="top" secondItem="ePk-DI-cc3" secondAttribute="top" constant="95" id="b48-xk-g51"/>
+                            <constraint firstItem="3QW-he-T3P" firstAttribute="leading" secondItem="ePk-DI-cc3" secondAttribute="leading" id="geF-jQ-gsL"/>
+                            <constraint firstItem="hlX-7h-57n" firstAttribute="centerX" secondItem="xdl-YG-f8L" secondAttribute="centerX" id="i6T-pb-PbS"/>
+                            <constraint firstItem="3QW-he-T3P" firstAttribute="bottom" secondItem="ePk-DI-cc3" secondAttribute="bottom" id="jvQ-Ng-3WP"/>
+                            <constraint firstItem="3QW-he-T3P" firstAttribute="trailing" secondItem="ePk-DI-cc3" secondAttribute="trailing" id="oN7-Q6-Px9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="tb8-nB-L2E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGR-6U-apY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1275" y="-346"/>
+            <point key="canvasLocation" x="1273.913043478261" y="-346.20535714285711"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="Y4D-tw-TKu">
@@ -728,6 +811,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Avatar" width="264" height="266"/>
         <image name="By myself" width="646" height="114"/>
         <image name="Check-in button" width="562" height="120"/>
         <image name="Home" width="260" height="260"/>
@@ -735,6 +819,7 @@
         <image name="Restaurant" width="260" height="260"/>
         <image name="Untitled design (14)" width="400" height="240"/>
         <image name="Work" width="260" height="260"/>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="friends" width="646" height="114"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="partner" width="646" height="114"/>
