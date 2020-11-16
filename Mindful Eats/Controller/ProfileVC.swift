@@ -26,5 +26,33 @@ class ProfileVC: UIViewController {
         
     }
     
+    @IBAction func nameButtonPressed(_ sender: Any) {
+        showTextField()
+    }
+    
+    func showTextField() {
+        
+        let usersName = "Fancy"
+        
+        let alertController = UIAlertController(title: "Edit Name", message: "", preferredStyle: .alert)
+        
+        alertController.addTextField()
+        
+        let textField = alertController.textFields![0]
+        textField.text = usersName
+        
+        let confirmAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
+            print("Saved")
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 
 }
