@@ -4,12 +4,16 @@ import UIKit
 class ProfileVC: UIViewController {
 
     @IBOutlet weak var nameButton: CustomAnswerButton!
+    @IBOutlet weak var allCheckInsButton: CustomAnswerButton!
+    @IBOutlet weak var bottomView: UIView!
     
     var BGImage = UIImageView()
     var userName = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bottomView.layer.cornerRadius = bottomView.frame.width / 14
 
         loadBackgroundImage()
         loadUserInfo()
