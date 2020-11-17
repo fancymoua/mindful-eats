@@ -30,6 +30,7 @@
 		B1B96B2E25634538000215AF /* CustomLocationStatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */; };
 		B1B96B3325634892000215AF /* LocationStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B3225634892000215AF /* LocationStatsVC.swift */; };
 		B1B96B3825635A7D000215AF /* PeopleStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B3725635A7D000215AF /* PeopleStatsVC.swift */; };
+		B1B96B3D256395F6000215AF /* PickAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B3C256395F6000215AF /* PickAvatarVC.swift */; };
 		D79E3F5D393D9F40D90B55F7 /* Pods_Mindful_EatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */; };
 		FD68CBE7BB5B5ECF0AB6CA98 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationStatBox.swift; sourceTree = "<group>"; };
 		B1B96B3225634892000215AF /* LocationStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatsVC.swift; sourceTree = "<group>"; };
 		B1B96B3725635A7D000215AF /* PeopleStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStatsVC.swift; sourceTree = "<group>"; };
+		B1B96B3C256395F6000215AF /* PickAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAvatarVC.swift; sourceTree = "<group>"; };
 		C67DF124ED092E84ABBDBE5F /* Pods-Mindful Eats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats.debug.xcconfig"; path = "Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats.debug.xcconfig"; sourceTree = "<group>"; };
 		D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_Eats_Mindful_EatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_EatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				B11CF444255C605F00C7325B /* ProfileVC.swift */,
 				B1B96B3225634892000215AF /* LocationStatsVC.swift */,
 				B1B96B3725635A7D000215AF /* PeopleStatsVC.swift */,
+				B1B96B3C256395F6000215AF /* PickAvatarVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				B1B96B292563249C000215AF /* CustomButton.swift in Sources */,
 				B11CF458255C88ED00C7325B /* AddFoodVC.swift in Sources */,
 				B11CF43D255C502500C7325B /* CheckInCell.swift in Sources */,
+				B1B96B3D256395F6000215AF /* PickAvatarVC.swift in Sources */,
 				B1654091255F2DAD0000B4A6 /* PeoplePlaceVC.swift in Sources */,
 				B11CF445255C605F00C7325B /* ProfileVC.swift in Sources */,
 				B11CF438255C468D00C7325B /* CheckInsTableVC.swift in Sources */,

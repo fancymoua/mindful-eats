@@ -615,7 +615,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-he-T3P">
                                 <rect key="frame" x="0.0" y="184" width="414" height="712"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-7h-57n">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-7h-57n">
                                         <rect key="frame" x="142" y="-70" width="130" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="7Sv-8D-hQn"/>
@@ -713,8 +713,10 @@
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="tb8-nB-L2E"/>
                     <connections>
                         <outlet property="allCheckInsButton" destination="7IF-SU-PwP" id="Dtt-ah-oGE"/>
+                        <outlet property="avatarImageView" destination="hlX-7h-57n" id="C8c-ZB-hCe"/>
                         <outlet property="bottomView" destination="3QW-he-T3P" id="AU2-BS-o7r"/>
                         <outlet property="nameButton" destination="U9n-OU-tUS" id="Ndf-rW-iKP"/>
+                        <segue destination="b9y-7M-NYx" kind="presentation" identifier="ProfileToAvatarSelection" id="1DK-P2-Mob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGR-6U-apY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -826,6 +828,148 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeS-oi-85u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1900.0000000000002" y="286.60714285714283"/>
+        </scene>
+        <!--Pick AvatarVC-->
+        <scene sceneID="bh0-p9-bP8">
+            <objects>
+                <viewController id="b9y-7M-NYx" customClass="PickAvatarVC" customModule="Mindful_Eats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Uj-uZ-YBj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set avatar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrJ-i7-r0c">
+                                <rect key="frame" x="30" y="60" width="354" height="30.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="0.028559999999999999" green="0.02751" blue="0.027490000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Urm-Vt-0qn" userLabel="Whole Stack">
+                                <rect key="frame" x="30" y="90.5" width="354" height="720"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="neo-Cs-zuU" userLabel="First row">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="240"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (14)" translatesAutoresizingMaskIntoConstraints="NO" id="84b-47-lkE" userLabel="Avatar-1-large">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="LdT-BB-2Be" appends="YES" id="S62-He-hZY"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-2-large" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-6k-cPX">
+                                                <rect key="frame" x="181" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="okB-Ks-iYM" appends="YES" id="NJO-8t-WNQ"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="O2Z-OW-ghE" userLabel="Second row">
+                                        <rect key="frame" x="0.0" y="240" width="354" height="240"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-3-large" translatesAutoresizingMaskIntoConstraints="NO" id="LRq-IA-481">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Phj-lB-NEE" appends="YES" id="tKA-l1-3w8"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-5-large" translatesAutoresizingMaskIntoConstraints="NO" id="aoQ-yV-aoe">
+                                                <rect key="frame" x="181" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="l5y-gm-SMk" appends="YES" id="J6s-X7-Vkp"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EXu-SW-urA" userLabel="Third row">
+                                        <rect key="frame" x="0.0" y="480" width="354" height="240"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-6-large" translatesAutoresizingMaskIntoConstraints="NO" id="deA-nh-SdZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="UTg-v7-7t5" appends="YES" id="aBf-d4-Eqj"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-4-large" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-jU-NZU">
+                                                <rect key="frame" x="181" y="0.0" width="173" height="240"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="z9R-nQ-cMq" appends="YES" id="oPH-ed-8sm"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6b4-zG-ZSA"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UrJ-i7-r0c" firstAttribute="leading" secondItem="6b4-zG-ZSA" secondAttribute="leading" constant="30" id="3ae-vi-VDn"/>
+                            <constraint firstItem="UrJ-i7-r0c" firstAttribute="top" secondItem="6b4-zG-ZSA" secondAttribute="top" constant="60" id="E3c-Ou-Hc0"/>
+                            <constraint firstItem="Urm-Vt-0qn" firstAttribute="top" secondItem="UrJ-i7-r0c" secondAttribute="bottom" id="IgP-9j-utL"/>
+                            <constraint firstItem="6b4-zG-ZSA" firstAttribute="trailing" secondItem="UrJ-i7-r0c" secondAttribute="trailing" constant="30" id="T7L-rQ-MwO"/>
+                            <constraint firstAttribute="bottom" secondItem="Urm-Vt-0qn" secondAttribute="bottom" constant="31.5" id="eIS-hj-3Gf"/>
+                            <constraint firstItem="Urm-Vt-0qn" firstAttribute="leading" secondItem="6b4-zG-ZSA" secondAttribute="leading" constant="30" id="trF-kr-Pj7"/>
+                            <constraint firstAttribute="trailing" secondItem="Urm-Vt-0qn" secondAttribute="trailing" constant="30" id="vuY-Uk-DKR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zl-F1-bTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LdT-BB-2Be" userLabel="Avatar-1">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-1"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="ZQN-Pg-tdT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="okB-Ks-iYM" userLabel="Avatar-2">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-2"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="qxt-4t-n6q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Phj-lB-NEE" userLabel="Avatar-3">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-3"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="Mgm-on-uvM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="z9R-nQ-cMq" userLabel="Avatar-5">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-5"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="TMr-od-fbL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="l5y-gm-SMk" userLabel="Avatar-6">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-6"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="v44-kF-eIc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UTg-v7-7t5" userLabel="Avatar-4">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-4"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="Ug6-GT-mog"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2173.913043478261" y="-841.07142857142856"/>
         </scene>
         <!--Location StatsVC-->
         <scene sceneID="DCJ-QG-rN5">
@@ -1108,6 +1252,11 @@
     </scenes>
     <resources>
         <image name="Avatar" width="264" height="266"/>
+        <image name="Avatar-2-large" width="200" height="120"/>
+        <image name="Avatar-3-large" width="200" height="120"/>
+        <image name="Avatar-4-large" width="200" height="120"/>
+        <image name="Avatar-5-large" width="200" height="120"/>
+        <image name="Avatar-6-large" width="200" height="120"/>
         <image name="By myself" width="646" height="114"/>
         <image name="Check-in button" width="562" height="120"/>
         <image name="Location-home" width="260" height="260"/>

@@ -3,6 +3,7 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var nameButton: CustomAnswerButton!
     @IBOutlet weak var allCheckInsButton: CustomAnswerButton!
     @IBOutlet weak var bottomView: UIView!
@@ -15,13 +16,32 @@ class ProfileVC: UIViewController {
         
         bottomView.layer.cornerRadius = bottomView.frame.width / 14
 
+        avatarImageView.isUserInteractionEnabled = true
         loadBackgroundImage()
         loadUserInfo()
         
+        addGestureRecognizerToImageView()
+        setUserAvatar()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        setUserAvatar()
     }
     
     @IBAction func nameButtonPressed(_ sender: Any) {
         showTextField()
+    }
+    
+    func addGestureRecognizerToImageView() {
+        let cow = UITapGestureRecognizer(target: self, action: #selector(self.openAvatarSelection))
+        avatarImageView.addGestureRecognizer(cow)
+    }
+    
+    @objc func openAvatarSelection() {
+        print("Hey it's me")
+        performSegue(withIdentifier: "ProfileToAvatarSelection", sender: self)
+        
     }
     
     func showTextField() {
@@ -48,6 +68,28 @@ class ProfileVC: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
+    
+    func setUserAvatar() {
+        
+        if let userAvatar = UserDefaults.standard.string(forKey: "User_avatar") {
+            if userAvatar == "Avatar-1" {
+                avatarImageView.image = UIImage(named: "Avatar-1")
+            } else if userAvatar == "Avatar-2" {
+                avatarImageView.image = UIImage(named: "Avatar-2")
+            } else if userAvatar == "Avatar-3" {
+                avatarImageView.image = UIImage(named: "Avatar-3")
+            } else if userAvatar == "Avatar-4" {
+                avatarImageView.image = UIImage(named: "Avatar-4")
+            } else if userAvatar == "Avatar-5" {
+                avatarImageView.image = UIImage(named: "Avatar-5")
+            } else if userAvatar == "Avatar-6" {
+                avatarImageView.image = UIImage(named: "Avatar-6")
+            }
+        }
+        
+        
+    }
 
 }
 
