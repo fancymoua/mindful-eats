@@ -92,6 +92,8 @@ extension CheckInsTableVC: UITableViewDataSource, UITableViewDelegate {
         destVC.foods = foods!
         destVC.date = checkIns[indexPath.row].date!
         destVC.emotions = emotions
+        destVC.people = checkIns[indexPath.row].companion!
+        destVC.place = checkIns[indexPath.row].location!
         
         show(destVC, sender: self)
         

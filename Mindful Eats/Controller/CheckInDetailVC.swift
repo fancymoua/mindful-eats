@@ -8,9 +8,11 @@ class CheckInDetailVC: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var emotionsLabel: UILabel!
     
-    var foods = String()
     var date = Date()
+    var foods = String()
     var emotions = String()
+    var people = String()
+    var place = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,8 @@ class CheckInDetailVC: UIViewController {
         emotionsLabel.text = emotions
         
         displayDateTime()
+        print(people)
+        print(place)
     }
     
     func displayDateTime() {
