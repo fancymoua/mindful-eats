@@ -11,7 +11,8 @@ class CheckInDetailVC: UIViewController {
     @IBOutlet weak var foodsView: UIView!
     @IBOutlet weak var peopleView: UIView!
     @IBOutlet weak var placeView: UIView!
-    
+    @IBOutlet weak var peopleLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
     var date = Date()
     var foods = String()
@@ -21,11 +22,9 @@ class CheckInDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        foodsLabel.text = foods
-        emotionsLabel.text = emotions
         
-        displayDateTime()
+        loadUserInfo()
+        
         print(people)
         print(place)
         
@@ -45,8 +44,25 @@ class CheckInDetailVC: UIViewController {
         
     }
     
+}
 
-    
+extension CheckInDetailVC {
+    func loadUserInfo() {
+        
+        displayDateTime()
+        foodsLabel.text = foods
+        emotionsLabel.text = emotions
+        locationLabel.text = place
+        
+        if people == "self" {
+            peopleLabel.text = "Myself"
+        } else if people == "spouse-partner" {
+            peopleLabel.text = "Spouse/partner"
+        } else if people == "family-friends-coworkers" {
+            peopleLabel.text = "Family/friends"
+        }
+        
+    }
 }
 
 extension CheckInDetailVC {

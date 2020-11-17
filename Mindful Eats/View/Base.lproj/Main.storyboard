@@ -770,6 +770,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joyous, content, happy, good, nice, awesome, sweet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EjD-YL-SVB" userLabel="Top">
                                                 <rect key="frame" x="0.0" y="0.0" width="289" height="120"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="8WH-r1-n66"/>
                                                     <constraint firstAttribute="height" constant="120" id="nrK-un-uRi"/>
@@ -827,10 +828,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="tWq-hZ-blH" firstAttribute="top" secondItem="Zuu-TJ-Kt4" secondAttribute="top" id="Hy8-do-plq"/>
                                                     <constraint firstAttribute="trailing" secondItem="tWq-hZ-blH" secondAttribute="trailing" constant="25" id="S0f-x9-Gf0"/>
@@ -839,6 +840,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -905,8 +907,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-MR-7Ji" userLabel="People view">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="71"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Myself" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jD-ET-Rl6">
-                                                <rect key="frame" x="90" y="25.5" width="87" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Myself" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jD-ET-Rl6">
+                                                <rect key="frame" x="90" y="10" width="87" height="51"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -923,9 +925,10 @@
                                         <constraints>
                                             <constraint firstItem="d0l-8w-Dux" firstAttribute="centerY" secondItem="7SL-MR-7Ji" secondAttribute="centerY" id="05D-It-rA2"/>
                                             <constraint firstItem="d0l-8w-Dux" firstAttribute="leading" secondItem="7SL-MR-7Ji" secondAttribute="leading" constant="20" id="4B5-wM-c2V"/>
+                                            <constraint firstAttribute="bottom" secondItem="3jD-ET-Rl6" secondAttribute="bottom" constant="10" id="D3W-vV-hV7"/>
                                             <constraint firstItem="3jD-ET-Rl6" firstAttribute="leading" secondItem="d0l-8w-Dux" secondAttribute="trailing" constant="35" id="G2w-zd-IXl"/>
-                                            <constraint firstItem="3jD-ET-Rl6" firstAttribute="centerY" secondItem="7SL-MR-7Ji" secondAttribute="centerY" id="Nkd-5M-Khy"/>
                                             <constraint firstAttribute="trailing" secondItem="3jD-ET-Rl6" secondAttribute="trailing" constant="5" id="cqN-Xc-jgp"/>
+                                            <constraint firstItem="3jD-ET-Rl6" firstAttribute="top" secondItem="7SL-MR-7Ji" secondAttribute="top" constant="10" id="t7E-Ur-IFo"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -987,6 +990,8 @@
                         <outlet property="emotionsView" destination="zWp-Qo-Ohx" id="EgV-8R-j1O"/>
                         <outlet property="foodsLabel" destination="0Vb-nB-lUQ" id="zP0-Gj-Pek"/>
                         <outlet property="foodsView" destination="Geb-Mr-jE0" id="Dwl-jX-LCq"/>
+                        <outlet property="locationLabel" destination="eDf-LR-Qfr" id="Chn-3a-vnn"/>
+                        <outlet property="peopleLabel" destination="3jD-ET-Rl6" id="9do-GX-FYO"/>
                         <outlet property="peopleView" destination="7SL-MR-7Ji" id="9p5-HB-j8A"/>
                         <outlet property="placeView" destination="83O-Uv-sxz" id="8TU-hF-khp"/>
                         <outlet property="timeLabel" destination="PYX-g7-Wgh" id="b2w-dX-4se"/>
