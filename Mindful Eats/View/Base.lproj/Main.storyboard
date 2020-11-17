@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kli-Yc-jX5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9R-QU-j3P">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -482,7 +482,7 @@
                                                     <constraint firstAttribute="height" constant="140" id="Af4-Kw-BIM"/>
                                                     <constraint firstAttribute="width" constant="140" id="PUF-4S-4QY"/>
                                                 </constraints>
-                                                <state key="normal" image="Home"/>
+                                                <state key="normal" image="Location-home"/>
                                                 <connections>
                                                     <action selector="locationButtonSelected:" destination="gF6-bY-esS" eventType="touchUpInside" id="zrC-RQ-ubJ"/>
                                                 </connections>
@@ -494,7 +494,7 @@
                                                     <constraint firstAttribute="width" constant="140" id="e27-Wn-Mwq"/>
                                                     <constraint firstAttribute="height" constant="140" id="fTj-EC-yNp"/>
                                                 </constraints>
-                                                <state key="normal" image="Restaurant"/>
+                                                <state key="normal" image="Location-restaurant"/>
                                                 <connections>
                                                     <action selector="locationButtonSelected:" destination="gF6-bY-esS" eventType="touchUpInside" id="Vkp-J3-Zsc"/>
                                                 </connections>
@@ -512,7 +512,7 @@
                                                     <constraint firstAttribute="height" constant="140" id="OqW-y8-fPW"/>
                                                     <constraint firstAttribute="width" constant="140" id="oj2-oO-dQW"/>
                                                 </constraints>
-                                                <state key="normal" image="Party"/>
+                                                <state key="normal" image="Location-party"/>
                                                 <connections>
                                                     <action selector="locationButtonSelected:" destination="gF6-bY-esS" eventType="touchUpInside" id="NHG-hG-rpu"/>
                                                 </connections>
@@ -524,7 +524,7 @@
                                                     <constraint firstAttribute="height" constant="140" id="4fH-aG-d21"/>
                                                     <constraint firstAttribute="width" constant="140" id="EZg-Bb-b0W"/>
                                                 </constraints>
-                                                <state key="normal" image="Work"/>
+                                                <state key="normal" image="Location-work"/>
                                                 <connections>
                                                     <action selector="locationButtonSelected:" destination="gF6-bY-esS" eventType="touchUpInside" id="62I-jT-mNa"/>
                                                 </connections>
@@ -656,19 +656,8 @@
                                             <constraint firstAttribute="height" constant="60" id="fqk-8G-SSb"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRE-Ls-JUH" customClass="CustomAnswerButton" customModule="Mindful_Eats" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="220.5" width="354" height="60"/>
-                                        <color key="backgroundColor" red="1" green="0.4941176471" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="Sbc-Pw-oZG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="View all Check-in's &gt;">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fjp-ci-cXa">
-                                        <rect key="frame" x="30" y="311" width="354" height="180"/>
+                                        <rect key="frame" x="30" y="215.5" width="354" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="Ryh-kf-uYP"/>
                                         </constraints>
@@ -677,19 +666,16 @@
                                         </connections>
                                     </containerView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.98485409640392596" green="0.99999994039535522" blue="0.92343818662732502" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="w3t-UX-3XV" firstAttribute="top" secondItem="AQF-SY-usk" secondAttribute="bottom" constant="30" id="C3I-0A-ycF"/>
-                                    <constraint firstItem="QRE-Ls-JUH" firstAttribute="top" secondItem="w3t-UX-3XV" secondAttribute="bottom" constant="25" id="DmC-VT-Iae"/>
                                     <constraint firstAttribute="trailing" secondItem="AQF-SY-usk" secondAttribute="trailing" constant="30" id="IsO-oJ-Efu"/>
                                     <constraint firstItem="AQF-SY-usk" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="JNe-2l-Pu2"/>
                                     <constraint firstItem="Fjp-ci-cXa" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="PFm-wq-QUl"/>
-                                    <constraint firstItem="Fjp-ci-cXa" firstAttribute="top" secondItem="QRE-Ls-JUH" secondAttribute="bottom" constant="30" id="WIb-xq-eAF"/>
                                     <constraint firstItem="AQF-SY-usk" firstAttribute="top" secondItem="3QW-he-T3P" secondAttribute="top" constant="75" id="Xij-kq-Z7r"/>
                                     <constraint firstAttribute="trailing" secondItem="Fjp-ci-cXa" secondAttribute="trailing" constant="30" id="au8-fY-QhO"/>
                                     <constraint firstItem="w3t-UX-3XV" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="bZ8-bk-1an"/>
-                                    <constraint firstItem="QRE-Ls-JUH" firstAttribute="leading" secondItem="3QW-he-T3P" secondAttribute="leading" constant="30" id="cNe-gP-JyF"/>
-                                    <constraint firstAttribute="trailing" secondItem="QRE-Ls-JUH" secondAttribute="trailing" constant="30" id="mUI-lW-y6m"/>
+                                    <constraint firstItem="Fjp-ci-cXa" firstAttribute="top" secondItem="w3t-UX-3XV" secondAttribute="bottom" constant="20" id="ch0-IG-vOp"/>
                                     <constraint firstAttribute="trailing" secondItem="w3t-UX-3XV" secondAttribute="trailing" constant="30" id="xaM-yh-Nge"/>
                                 </constraints>
                             </view>
@@ -966,7 +952,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="TMu-g6-XLT" secondAttribute="trailing" id="87S-jN-Bob"/>
                             <constraint firstItem="TMu-g6-XLT" firstAttribute="top" secondItem="7L9-Uj-JvF" secondAttribute="bottom" constant="15" id="CuK-Mv-jXm"/>
@@ -992,11 +978,11 @@
         <image name="Avatar" width="264" height="266"/>
         <image name="By myself" width="646" height="114"/>
         <image name="Check-in button" width="562" height="120"/>
-        <image name="Home" width="260" height="260"/>
-        <image name="Party" width="260" height="260"/>
-        <image name="Restaurant" width="260" height="260"/>
+        <image name="Location-home" width="260" height="260"/>
+        <image name="Location-party" width="260" height="260"/>
+        <image name="Location-restaurant" width="260" height="260"/>
+        <image name="Location-work" width="260" height="260"/>
         <image name="Untitled design (14)" width="400" height="240"/>
-        <image name="Work" width="260" height="260"/>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="event" width="100" height="100"/>
         <image name="friends" width="646" height="114"/>

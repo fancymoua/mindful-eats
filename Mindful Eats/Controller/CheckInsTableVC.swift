@@ -57,12 +57,12 @@ extension CheckInsTableVC: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CheckInCell") as! CheckInCell
         
-        let date = checkIns[indexPath.row].date
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        let finalDate = formatter.string(from: date!)
-        
-        cell.dateLabel.text = finalDate
+        if let date = checkIns[indexPath.row].date {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            let finalDate = formatter.string(from: date)
+            cell.dateLabel.text = finalDate
+        }
         
         var emotionImage = UIImage()
         
