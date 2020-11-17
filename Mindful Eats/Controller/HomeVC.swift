@@ -6,6 +6,7 @@ import CoreData
 class HomeVC: UIViewController {
     
     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var greetingLabel: UILabel!
     
     var BGImage = UIImageView()
 
@@ -13,10 +14,10 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         loadBackgroundImage()
+        checkTime()
         
         getCoreDataDBPath()
         setUserAvatar()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,11 +48,39 @@ class HomeVC: UIViewController {
             }
         }
     }
-
-
 }
 
 extension HomeVC {
+    
+    func checkTime() {
+        let nowRaw = Date()
+        
+        let midnightRaw = "12:00 am"
+        
+        let stringToDate = DateFormatter()
+        stringToDate.timeStyle = .short
+        
+        let dateToString = DateFormatter()
+        dateToString.timeStyle = .short
+        
+        let nowString = dateToString.string(from: nowRaw)
+        let nowFormattedDate = stringToDate.date(from: nowString)
+        
+        let midnightFormatted = stringToDate.date(from: midnightRaw)
+        
+        let duration = nowFormattedDate?.timeIntervalSince(midnightFormatted!)
+        
+        let durationInt = Int(duration!)
+        print("durationInt \(durationInt)")
+        
+        if durationInt >= 0 && durationInt <= 43199 {
+            greetingLabel.text = "Good morning"
+        } else if durationInt >= 43200 && durationInt <= 61199 {
+            greetingLabel.text = "Good afternoon"
+        } else if durationInt >= 61200 {
+            greetingLabel.text = "Good evening"
+        }
+    }
     
     func loadBackgroundImage() {
         
