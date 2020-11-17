@@ -75,6 +75,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QCS-IN-Llp"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="NWW-RC-Lsh" id="QRh-xt-xGi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -875,11 +878,11 @@
                                                     <outletCollection property="gestureRecognizers" destination="Phj-lB-NEE" appends="YES" id="tKA-l1-3w8"/>
                                                 </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-5-large" translatesAutoresizingMaskIntoConstraints="NO" id="aoQ-yV-aoe">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-4-large" translatesAutoresizingMaskIntoConstraints="NO" id="aoQ-yV-aoe">
                                                 <rect key="frame" x="181" y="0.0" width="173" height="240"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="l5y-gm-SMk" appends="YES" id="J6s-X7-Vkp"/>
+                                                    <outletCollection property="gestureRecognizers" destination="z9R-nQ-cMq" appends="YES" id="kon-be-jKK"/>
                                                 </connections>
                                             </imageView>
                                         </subviews>
@@ -887,18 +890,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EXu-SW-urA" userLabel="Third row">
                                         <rect key="frame" x="0.0" y="480" width="354" height="240"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-6-large" translatesAutoresizingMaskIntoConstraints="NO" id="deA-nh-SdZ">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-5-large" translatesAutoresizingMaskIntoConstraints="NO" id="deA-nh-SdZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="173" height="240"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="UTg-v7-7t5" appends="YES" id="aBf-d4-Eqj"/>
+                                                    <outletCollection property="gestureRecognizers" destination="l5y-gm-SMk" appends="YES" id="YHy-m7-M9W"/>
                                                 </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-4-large" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-jU-NZU">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-6-large" translatesAutoresizingMaskIntoConstraints="NO" id="Cfx-jU-NZU">
                                                 <rect key="frame" x="181" y="0.0" width="173" height="240"/>
                                                 <gestureRecognizers/>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="z9R-nQ-cMq" appends="YES" id="oPH-ed-8sm"/>
+                                                    <outletCollection property="gestureRecognizers" destination="UTg-v7-7t5" appends="YES" id="bh6-q0-ra0"/>
                                                 </connections>
                                             </imageView>
                                         </subviews>
@@ -944,25 +947,25 @@
                         <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="Mgm-on-uvM"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="z9R-nQ-cMq" userLabel="Avatar-5">
+                <tapGestureRecognizer id="z9R-nQ-cMq" userLabel="Avatar-4">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-5"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-4"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="TMr-od-fbL"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="l5y-gm-SMk" userLabel="Avatar-6">
+                <tapGestureRecognizer id="l5y-gm-SMk" userLabel="Avatar-5">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-6"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-5"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="v44-kF-eIc"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="UTg-v7-7t5" userLabel="Avatar-4">
+                <tapGestureRecognizer id="UTg-v7-7t5" userLabel="Avatar-6">
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-4"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Avatar-6"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="addTapGestureRecognizer:" destination="b9y-7M-NYx" id="Ug6-GT-mog"/>

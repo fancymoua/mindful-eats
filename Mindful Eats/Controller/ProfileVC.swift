@@ -87,8 +87,6 @@ class ProfileVC: UIViewController {
                 avatarImageView.image = UIImage(named: "Avatar-6")
             }
         }
-        
-        
     }
 
 }

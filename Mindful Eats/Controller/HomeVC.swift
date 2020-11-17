@@ -1,8 +1,11 @@
 
 
 import UIKit
+import CoreData
 
 class HomeVC: UIViewController {
+    
+    @IBOutlet weak var avatarImageView: UIImageView!
     
     var BGImage = UIImageView()
 
@@ -12,6 +15,7 @@ class HomeVC: UIViewController {
         loadBackgroundImage()
         
         getCoreDataDBPath()
+        setUserAvatar()
         
     }
     
@@ -23,6 +27,25 @@ class HomeVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         navigationController?.isNavigationBarHidden = false
+    }
+    
+    func setUserAvatar() {
+        
+        if let userAvatar = UserDefaults.standard.string(forKey: "User_avatar") {
+            if userAvatar == "Avatar-1" {
+                avatarImageView.image = UIImage(named: "Avatar-1-large")
+            } else if userAvatar == "Avatar-2" {
+                avatarImageView.image = UIImage(named: "Avatar-2-large")
+            } else if userAvatar == "Avatar-3" {
+                avatarImageView.image = UIImage(named: "Avatar-3-large")
+            } else if userAvatar == "Avatar-4" {
+                avatarImageView.image = UIImage(named: "Avatar-4-large")
+            } else if userAvatar == "Avatar-5" {
+                avatarImageView.image = UIImage(named: "Avatar-5-large")
+            } else if userAvatar == "Avatar-6" {
+                avatarImageView.image = UIImage(named: "Avatar-6-large")
+            }
+        }
     }
 
 
