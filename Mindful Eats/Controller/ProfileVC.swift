@@ -1,5 +1,6 @@
 
 import UIKit
+import CoreData
 
 class ProfileVC: UIViewController {
 
@@ -10,6 +11,8 @@ class ProfileVC: UIViewController {
     
     var BGImage = UIImageView()
     var userName = String()
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,8 @@ class ProfileVC: UIViewController {
 
         avatarImageView.isUserInteractionEnabled = true
         loadBackgroundImage()
-        loadUserInfo()
+        loadUserName()
+        loadUserCheckInsCount()
         
         addGestureRecognizerToImageView()
         setUserAvatar()
@@ -39,9 +43,7 @@ class ProfileVC: UIViewController {
     }
     
     @objc func openAvatarSelection() {
-        print("Hey it's me")
         performSegue(withIdentifier: "ProfileToAvatarSelection", sender: self)
-        
     }
     
     func showTextField() {
@@ -68,8 +70,6 @@ class ProfileVC: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
-    
     func setUserAvatar() {
         
         if let userAvatar = UserDefaults.standard.string(forKey: "User_avatar") {
@@ -92,12 +92,26 @@ class ProfileVC: UIViewController {
 }
 
 extension ProfileVC {
-    func loadUserInfo() {
+    func loadUserName() {
         if let userName = UserDefaults.standard.string(forKey: "User_name") {
             nameButton.setTitle(userName, for: .normal)
         } else {
             nameButton.setTitle("Update Name", for: .normal)
             nameButton.titleLabel?.font = UIFont(name: "Avenir Next Italic", size: 14)
+        }
+    }
+    
+    func loadUserCheckInsCount() {
+        
+        var checkIns = [CheckIn]()
+        
+        let request : NSFetchRequest<CheckIn> = CheckIn.fetchRequest()
+        do {
+            checkIns = try context.fetch(request)
+            let count = checkIns.count
+            allCheckInsButton.setTitle("\(count)", for: .normal)
+        } catch {
+            print("Error getting data: \(error)")
         }
     }
 }
