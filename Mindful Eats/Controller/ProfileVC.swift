@@ -12,12 +12,8 @@ class ProfileVC: UIViewController {
         super.viewDidLoad()
 
         loadBackgroundImage()
+        loadUserInfo()
         
-        userName = UserDefaults.standard.string(forKey: "User_name")!
-        
-        nameButton.setTitle(userName, for: .normal)
-        
-        print("Value is \(userName)")
     }
     
     @IBAction func nameButtonPressed(_ sender: Any) {
@@ -31,11 +27,12 @@ class ProfileVC: UIViewController {
         alertController.addTextField()
         
         let textField = alertController.textFields![0]
-        textField.text = userName
+        textField.text = nameButton.currentTitle
         
         let confirmAction = UIAlertAction(title: "Save", style: .default) { (UIAlertAction) in
             UserDefaults.standard.setValue(textField.text, forKey: "User_name")
             self.nameButton.setTitle(textField.text, for: .normal)
+            self.userName = textField.text!
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (UIAlertAction) in
@@ -48,6 +45,17 @@ class ProfileVC: UIViewController {
     }
     
 
+}
+
+extension ProfileVC {
+    func loadUserInfo() {
+        if let userName = UserDefaults.standard.string(forKey: "User_name") {
+            nameButton.setTitle(userName, for: .normal)
+        } else {
+            nameButton.setTitle("Update Name", for: .normal)
+            nameButton.titleLabel?.font = UIFont(name: "Avenir Next Italic", size: 14)
+        }
+    }
 }
 
 extension ProfileVC {

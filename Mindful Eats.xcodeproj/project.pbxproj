@@ -27,6 +27,8 @@
 		B16AB0B5255B3EBF0021BC67 /* Mindful_EatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0B4255B3EBF0021BC67 /* Mindful_EatsTests.swift */; };
 		B16AB0C0255B3EBF0021BC67 /* Mindful_EatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */; };
 		B1B96B292563249C000215AF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B282563249C000215AF /* CustomButton.swift */; };
+		B1B96B2E25634538000215AF /* CustomLocationStatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */; };
+		B1B96B3325634892000215AF /* LocationStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B3225634892000215AF /* LocationStatsVC.swift */; };
 		D79E3F5D393D9F40D90B55F7 /* Pods_Mindful_EatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */; };
 		FD68CBE7BB5B5ECF0AB6CA98 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindful_EatsUITests.swift; sourceTree = "<group>"; };
 		B16AB0C1255B3EBF0021BC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1B96B282563249C000215AF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationStatBox.swift; sourceTree = "<group>"; };
+		B1B96B3225634892000215AF /* LocationStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatsVC.swift; sourceTree = "<group>"; };
 		C67DF124ED092E84ABBDBE5F /* Pods-Mindful Eats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindful Eats.debug.xcconfig"; path = "Target Support Files/Pods-Mindful Eats/Pods-Mindful Eats.debug.xcconfig"; sourceTree = "<group>"; };
 		D8CB0D30C2643A59C804DD84 /* Pods_Mindful_Eats_Mindful_EatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_Eats_Mindful_EatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FDC5CA430BAE6EE6A3283C /* Pods_Mindful_EatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindful_EatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,7 @@
 				B134055E255DF0FD0022185F /* EmotionsSelectionVC.swift */,
 				B11CF47B255CBC4900C7325B /* CheckInDetailVC.swift */,
 				B11CF444255C605F00C7325B /* ProfileVC.swift */,
+				B1B96B3225634892000215AF /* LocationStatsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				B11CF43C255C502500C7325B /* CheckInCell.swift */,
 				B11CF462255C8DFA00C7325B /* FoodItemCell.swift */,
 				B1B96B282563249C000215AF /* CustomButton.swift */,
+				B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,8 +470,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11CF433255B47D200C7325B /* Emotion.swift in Sources */,
+				B1B96B3325634892000215AF /* LocationStatsVC.swift in Sources */,
 				B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */,
 				B11CF463255C8DFA00C7325B /* FoodItemCell.swift in Sources */,
+				B1B96B2E25634538000215AF /* CustomLocationStatBox.swift in Sources */,
 				B11CF453255C738400C7325B /* MindfulEats.xcdatamodeld in Sources */,
 				B1B96B292563249C000215AF /* CustomButton.swift in Sources */,
 				B11CF458255C88ED00C7325B /* AddFoodVC.swift in Sources */,
