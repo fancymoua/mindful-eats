@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design (14)" translatesAutoresizingMaskIntoConstraints="NO" id="NWW-RC-Lsh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar-1-large" translatesAutoresizingMaskIntoConstraints="NO" id="NWW-RC-Lsh">
                                 <rect key="frame" x="50" y="128" width="314" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="BlR-0J-fhb"/>
@@ -1646,6 +1646,7 @@
     <resources>
         <image name="Avatar" width="264" height="266"/>
         <image name="Avatar-1" width="264" height="266"/>
+        <image name="Avatar-1-large" width="400" height="240"/>
         <image name="Avatar-2-large" width="200" height="120"/>
         <image name="Avatar-3-large" width="200" height="120"/>
         <image name="Avatar-4-large" width="200" height="120"/>
@@ -1655,7 +1656,6 @@
         <image name="People-group" width="162" height="96"/>
         <image name="People-partner" width="158" height="100"/>
         <image name="People-self" width="72" height="74"/>
-        <image name="Untitled design (14)" width="400" height="240"/>
         <image name="checkmark.circle" catalog="system" width="128" height="121"/>
         <image name="emotion_happy" width="50" height="50"/>
         <image name="emotion_sad" width="50" height="50"/>
