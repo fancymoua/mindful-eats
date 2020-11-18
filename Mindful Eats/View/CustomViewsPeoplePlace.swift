@@ -18,7 +18,7 @@ class CustomViewsPeoplePlace: UIView {
 //        layer.borderColor = UIColor.lightGray.cgColor
         
         layer.shadowColor = UIColor.lightGray.cgColor
-        layer.shadowOpacity = 0.8
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize(width: 1.5, height: 4.0)
         layer.shadowRadius = 2.0
         layer.masksToBounds = false

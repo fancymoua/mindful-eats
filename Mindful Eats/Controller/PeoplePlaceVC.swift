@@ -16,16 +16,19 @@ class PeoplePlaceVC: UIViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var locationSelected: String?
     var companionSelected: String?
+    
     var locationBool = false
     var peopleBool = false
     
     @IBAction func locationPressed(_ sender: UITapGestureRecognizer) {
         if locationBool == false {
-            sender.view?.backgroundColor = .green
+            sender.view?.layer.borderWidth = 3
+            sender.view?.layer.borderColor = #colorLiteral(red: 0, green: 0.4156862745, blue: 0.4431372549, alpha: 1)
             locationSelected = sender.name!
             locationBool = true
         } else if locationBool == true {
-            sender.view?.backgroundColor = .white
+            sender.view?.layer.borderWidth = 0
+            sender.view?.layer.borderColor = nil
             locationSelected = nil
             locationBool = false
         }
@@ -33,11 +36,13 @@ class PeoplePlaceVC: UIViewController {
     
     @IBAction func companionButtonPressed(_ sender: UITapGestureRecognizer) {
         if peopleBool == false {
-            sender.view?.backgroundColor = .green
+            sender.view?.layer.borderWidth = 3
+            sender.view?.layer.borderColor = #colorLiteral(red: 0, green: 0.4156862745, blue: 0.4431372549, alpha: 1)
             companionSelected = sender.name!
             peopleBool = true
-        } else if locationBool == true {
-            sender.view?.backgroundColor = .white
+        } else if peopleBool == true {
+            sender.view?.layer.borderWidth = 0
+            sender.view?.layer.borderColor = nil
             companionSelected = nil
             peopleBool = false
         }
@@ -79,7 +84,10 @@ extension PeoplePlaceVC {
         BGImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         BGImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
-        BGImage.image = #imageLiteral(resourceName: "gradient2")
+        BGImage.alpha = 0.8
+        
+//        BGImage.image = #imageLiteral(resourceName: "gradient2")
+        BGImage.image = #imageLiteral(resourceName: "Gradient Background")
         view.sendSubviewToBack(BGImage)
         
     }
@@ -89,10 +97,5 @@ extension PeoplePlaceVC {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.view.backgroundColor = .white
-//        navigationController?.navigationBar.layer.masksToBounds = false
-//        navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
-//        navigationController?.navigationBar.layer.shadowOpacity = 0.8
-//        navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-//        navigationController?.navigationBar.layer.shadowRadius = 2
     }
 }
