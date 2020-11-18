@@ -3,7 +3,7 @@
 import UIKit
 
 protocol deleteFoodItemDelegate {
-    func deleteFoodItem(_ position: Int)
+    func deleteFoodItem(_ name: String)
 }
 
 class FoodItemCell: UICollectionViewCell {
@@ -24,6 +24,8 @@ class FoodItemCell: UICollectionViewCell {
     
     @IBAction func deleteButtonPressed(_ sender: Any) {
         print("Delete button pressed")
+        print("dafad \(item)")
+        delegate?.deleteFoodItem(item)
     }
     
 }

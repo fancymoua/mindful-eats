@@ -72,6 +72,7 @@ extension AddFoodVC: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.delegate = self
         
         let item = foodItems[indexPath.row]
+        cell.item = item
         
         let ham = foodItems.firstIndex(of: item)
         print("ham \(ham)")
@@ -83,8 +84,9 @@ extension AddFoodVC: UICollectionViewDelegate, UICollectionViewDataSource {
 }
 
 extension AddFoodVC: deleteFoodItemDelegate {
-    func deleteFoodItem(_ position: Int) {
-        foodItems.remove(at: position)
+    func deleteFoodItem(_ name: String) {
+        print(name)
+        foodItems.removeAll(where: {name.contains($0)})
         foodItemsCollectionView.reloadData()
     }
 }
