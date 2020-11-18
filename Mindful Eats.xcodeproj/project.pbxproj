@@ -26,6 +26,7 @@
 		B16AB0AA255B3EBE0021BC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16AB0A8255B3EBE0021BC67 /* LaunchScreen.storyboard */; };
 		B16AB0B5255B3EBF0021BC67 /* Mindful_EatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0B4255B3EBF0021BC67 /* Mindful_EatsTests.swift */; };
 		B16AB0C0255B3EBF0021BC67 /* Mindful_EatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */; };
+		B18FFA122564AB5E0022E421 /* CustomViewsPeoplePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18FFA112564AB5E0022E421 /* CustomViewsPeoplePlace.swift */; };
 		B1B96B292563249C000215AF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B282563249C000215AF /* CustomButton.swift */; };
 		B1B96B2E25634538000215AF /* CustomLocationStatBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */; };
 		B1B96B3325634892000215AF /* LocationStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B96B3225634892000215AF /* LocationStatsVC.swift */; };
@@ -82,6 +83,7 @@
 		B16AB0BB255B3EBF0021BC67 /* Mindful EatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mindful EatsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16AB0BF255B3EBF0021BC67 /* Mindful_EatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mindful_EatsUITests.swift; sourceTree = "<group>"; };
 		B16AB0C1255B3EBF0021BC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18FFA112564AB5E0022E421 /* CustomViewsPeoplePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewsPeoplePlace.swift; sourceTree = "<group>"; };
 		B1B96B282563249C000215AF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationStatBox.swift; sourceTree = "<group>"; };
 		B1B96B3225634892000215AF /* LocationStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationStatsVC.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				B11CF462255C8DFA00C7325B /* FoodItemCell.swift */,
 				B1B96B282563249C000215AF /* CustomButton.swift */,
 				B1B96B2D25634538000215AF /* CustomLocationStatBox.swift */,
+				B18FFA112564AB5E0022E421 /* CustomViewsPeoplePlace.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				B11CF433255B47D200C7325B /* Emotion.swift in Sources */,
 				B1B96B3325634892000215AF /* LocationStatsVC.swift in Sources */,
 				B16AB0A2255B3EBA0021BC67 /* HomeVC.swift in Sources */,
+				B18FFA122564AB5E0022E421 /* CustomViewsPeoplePlace.swift in Sources */,
 				B11CF463255C8DFA00C7325B /* FoodItemCell.swift in Sources */,
 				B1B96B2E25634538000215AF /* CustomLocationStatBox.swift in Sources */,
 				B11CF453255C738400C7325B /* MindfulEats.xcdatamodeld in Sources */,
