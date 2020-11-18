@@ -100,7 +100,7 @@ extension AddFoodVC {
         BGImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         BGImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
-        BGImage.image = #imageLiteral(resourceName: "Blue Gradient Background")
+        BGImage.image = #imageLiteral(resourceName: "Gradient Background")
         view.sendSubviewToBack(BGImage)
         
     }
