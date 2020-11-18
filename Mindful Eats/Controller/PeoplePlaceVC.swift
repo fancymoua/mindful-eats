@@ -17,10 +17,9 @@ class PeoplePlaceVC: UIViewController {
     var locationSelected = String()
     var companionSelected = String()
     
-    @IBAction func locationButtonSelected(_ sender: UIButton) {
-        
-        locationSelected = sender.accessibilityIdentifier!
-        
+    @IBAction func locationPressed(_ sender: UITapGestureRecognizer) {
+        locationSelected = sender.name!
+        print(locationSelected)
     }
     
     @IBAction func companionButtonPressed(_ sender: UIButton) {
