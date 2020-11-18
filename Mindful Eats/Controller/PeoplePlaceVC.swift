@@ -22,9 +22,10 @@ class PeoplePlaceVC: UIViewController {
         print(locationSelected)
     }
     
-    @IBAction func companionButtonPressed(_ sender: UIButton) {
+    @IBAction func companionButtonPressed(_ sender: UITapGestureRecognizer) {
         
-        companionSelected = sender.accessibilityIdentifier!
+        companionSelected = sender.name!
+        print(companionSelected)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {

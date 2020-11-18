@@ -635,14 +635,19 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="self"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="OFc-Xz-dHB" firstAttribute="centerY" secondItem="ANg-qO-X6P" secondAttribute="centerY" id="7vt-2k-WU2"/>
                                             <constraint firstItem="eWg-MT-2IP" firstAttribute="leading" secondItem="ANg-qO-X6P" secondAttribute="leading" constant="20" id="Abb-b5-myC"/>
                                             <constraint firstItem="OFc-Xz-dHB" firstAttribute="leading" secondItem="eWg-MT-2IP" secondAttribute="trailing" constant="30" id="Wcj-J2-LlT"/>
                                             <constraint firstItem="eWg-MT-2IP" firstAttribute="centerY" secondItem="ANg-qO-X6P" secondAttribute="centerY" id="dif-Cm-aT7"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7yP-eB-B8a" appends="YES" id="DSn-yv-gUJ"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRa-ds-Wz9" userLabel="Self view">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRa-ds-Wz9" userLabel="Partner view">
                                         <rect key="frame" x="0.0" y="88.5" width="314" height="73"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People-partner" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-d7-GZA">
@@ -660,14 +665,18 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="2KR-Sm-o9j" firstAttribute="leading" secondItem="nhe-d7-GZA" secondAttribute="trailing" constant="20" id="9of-7C-ypb"/>
                                             <constraint firstItem="nhe-d7-GZA" firstAttribute="centerY" secondItem="JRa-ds-Wz9" secondAttribute="centerY" id="A65-wH-c2z"/>
                                             <constraint firstItem="2KR-Sm-o9j" firstAttribute="centerY" secondItem="JRa-ds-Wz9" secondAttribute="centerY" id="ETz-1L-Jxj"/>
                                             <constraint firstItem="nhe-d7-GZA" firstAttribute="leading" secondItem="JRa-ds-Wz9" secondAttribute="leading" constant="20" id="Tr9-hN-C1D"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="l4d-PQ-bdH" appends="YES" id="fdE-Jm-fMh"/>
+                                        </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CES-w8-3KO" userLabel="Self view">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CES-w8-3KO" userLabel="Group view">
                                         <rect key="frame" x="0.0" y="176.5" width="314" height="73.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People-group" translatesAutoresizingMaskIntoConstraints="NO" id="wWh-WV-LSa">
@@ -685,6 +694,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="Ygf-Et-wxP" firstAttribute="centerY" secondItem="CES-w8-3KO" secondAttribute="centerY" id="BBN-0w-KGx"/>
                                             <constraint firstItem="wWh-WV-LSa" firstAttribute="centerY" secondItem="CES-w8-3KO" secondAttribute="centerY" id="Egr-nt-CaL"/>
@@ -692,6 +702,9 @@
                                             <constraint firstItem="wWh-WV-LSa" firstAttribute="leading" secondItem="CES-w8-3KO" secondAttribute="leading" constant="20" id="RpQ-CQ-f2C"/>
                                             <constraint firstItem="Ygf-Et-wxP" firstAttribute="leading" secondItem="wWh-WV-LSa" secondAttribute="trailing" constant="20" id="blS-xU-dRW"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="IHE-cl-kHf" appends="YES" id="RD4-vf-4vd"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -735,7 +748,7 @@
                     <navigationItem key="navigationItem" id="n51-Qy-tOt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knr-SR-zFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="URO-4k-4gI">
+                <tapGestureRecognizer id="URO-4k-4gI" userLabel="home">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="name" value="home"/>
                     </userDefinedRuntimeAttributes>
@@ -743,7 +756,7 @@
                         <action selector="locationPressed:" destination="gF6-bY-esS" id="UEi-b7-d3y"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="kgh-4n-Ypo">
+                <tapGestureRecognizer id="kgh-4n-Ypo" userLabel="restaurant">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="name" value="restaurant"/>
                     </userDefinedRuntimeAttributes>
@@ -751,7 +764,7 @@
                         <action selector="locationPressed:" destination="gF6-bY-esS" id="nAI-NK-4Fl"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Zbz-5s-B0r">
+                <tapGestureRecognizer id="Zbz-5s-B0r" userLabel="event">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="name" value="event"/>
                     </userDefinedRuntimeAttributes>
@@ -759,12 +772,36 @@
                         <action selector="locationPressed:" destination="gF6-bY-esS" id="RmR-mt-2Dk"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="EBq-K4-yYG">
+                <tapGestureRecognizer id="EBq-K4-yYG" userLabel="work">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="name" value="work"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="locationPressed:" destination="gF6-bY-esS" id="o8t-n3-Q5j"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7yP-eB-B8a" userLabel="by myself">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="self"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="companionButtonPressed:" destination="gF6-bY-esS" id="csE-V9-WcL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="l4d-PQ-bdH" userLabel="partner">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="spouse-partner"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="companionButtonPressed:" destination="gF6-bY-esS" id="3sY-Ky-va7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IHE-cl-kHf" userLabel="group">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="family-friends-coworkers"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="companionButtonPressed:" destination="gF6-bY-esS" id="DtK-eK-sSh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
