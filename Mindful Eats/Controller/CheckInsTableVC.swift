@@ -13,20 +13,23 @@ class CheckInsTableVC: UIViewController {
         
         checkinsTableView.dataSource = self
         checkinsTableView.delegate = self
-        
-        fetchAll()
-        
-        beginAnimation()
-        endingAnimations()
-        tableAnimator.startAnimation()
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    var loadAnimationShown = false
+    
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        fetchAll()
-
         
+        fetchAll()
+        
+        // only show load animation once
+        if loadAnimationShown == false {
+            beginAnimation()
+            endingAnimations()
+            tableAnimator.startAnimation()
+            loadAnimationShown = true
+        }
     }
     
     var checkIns = [CheckIn]()
@@ -58,10 +61,16 @@ extension CheckInsTableVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CheckInCell") as! CheckInCell
         
         if let date = checkIns[indexPath.row].date {
-            let formatter = DateFormatter()
-            formatter.dateStyle = .short
-            let finalDate = formatter.string(from: date)
-            cell.dateLabel.text = finalDate
+            let dateFormatter = DateFormatter()
+            let timeFormatter = DateFormatter()
+            
+            dateFormatter.dateStyle = .short
+            timeFormatter.timeStyle = .short
+            
+            let finalDate = dateFormatter.string(from: date)
+            let finalTime = timeFormatter.string(from: date)
+            
+            cell.dateLabel.text = "\(finalDate) \(finalTime)"
         }
         
         var emotionImage = UIImage()
@@ -76,7 +85,20 @@ extension CheckInsTableVC: UITableViewDataSource, UITableViewDelegate {
             emotionImage = #imageLiteral(resourceName: "emotion_happy")
         }
         
+        var locationImage = UIImage()
+        
+        if checkIns[indexPath.row].location == "home" {
+            locationImage = #imageLiteral(resourceName: "home")
+        } else if checkIns[indexPath.row].location == "restaurant" {
+            locationImage = #imageLiteral(resourceName: "restaurant")
+        } else if checkIns[indexPath.row].location == "event" {
+            locationImage = #imageLiteral(resourceName: "event")
+        } else if checkIns[indexPath.row].location == "work" {
+            locationImage = #imageLiteral(resourceName: "work")
+        }
+        
         cell.emotionImage.image = emotionImage
+        cell.locationImage.image = locationImage
         cell.configCell()
         
         return cell

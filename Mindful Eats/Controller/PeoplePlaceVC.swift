@@ -8,7 +8,8 @@ class PeoplePlaceVC: UIViewController {
         super.viewDidLoad()
 
         loadBackgroundImage()
-        print(locationSelected)
+        customizeNavBar()
+       
     }
     
     var BGImage = UIImageView()
@@ -78,8 +79,20 @@ extension PeoplePlaceVC {
         BGImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         BGImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         
-        BGImage.image = #imageLiteral(resourceName: "Blue Gradient Background")
+        BGImage.image = #imageLiteral(resourceName: "gradient2")
         view.sendSubviewToBack(BGImage)
         
+    }
+    
+    func customizeNavBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = .white
+//        navigationController?.navigationBar.layer.masksToBounds = false
+//        navigationController?.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
+//        navigationController?.navigationBar.layer.shadowOpacity = 0.8
+//        navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+//        navigationController?.navigationBar.layer.shadowRadius = 2
     }
 }

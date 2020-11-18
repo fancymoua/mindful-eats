@@ -14,6 +14,8 @@ class CustomViewsPeoplePlace: UIView {
     func setupView() {
         layer.cornerRadius = frame.height / 10
         backgroundColor = .white
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.lightGray.cgColor
     }
     
 }

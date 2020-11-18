@@ -74,9 +74,6 @@ extension AddFoodVC: UICollectionViewDelegate, UICollectionViewDataSource {
         let item = foodItems[indexPath.row]
         cell.item = item
         
-        let ham = foodItems.firstIndex(of: item)
-        print("ham \(ham)")
-        
         return cell
         
     }

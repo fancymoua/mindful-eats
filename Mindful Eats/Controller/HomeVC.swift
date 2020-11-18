@@ -13,8 +13,9 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadBackgroundImage()
+//        loadBackgroundImage()
         checkTime()
+        customizeTabBar()
         
         getCoreDataDBPath()
         setUserAvatar()
@@ -95,6 +96,14 @@ extension HomeVC {
         BGImage.image = #imageLiteral(resourceName: "Gradient Background")
         view.sendSubviewToBack(BGImage)
         
+    }
+    
+    func customizeTabBar() {
+        tabBarController?.tabBar.layer.shadowColor = UIColor.gray.cgColor
+        tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0.0, height: 1.3)
+        tabBarController?.tabBar.layer.shadowRadius = 2.5
+        tabBarController?.tabBar.layer.shadowOpacity = 0.6
+        tabBarController?.tabBar.layer.masksToBounds = false
     }
     
     func getCoreDataDBPath() {
