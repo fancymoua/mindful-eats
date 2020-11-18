@@ -20,6 +20,8 @@ class FoodItemCell: UICollectionViewCell {
         
         bgView.layer.cornerRadius = 10
         
+        // width of collectionView size base on width of name label (set in storyboard)
+        
     }
     
     @IBAction func deleteButtonPressed(_ sender: Any) {
